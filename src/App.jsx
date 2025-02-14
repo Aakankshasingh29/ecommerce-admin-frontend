@@ -1,17 +1,10 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Login from "./pages/login";
-import { Toaster } from "react-hot-toast";
-
-
-function App() {
-  return <div>
-    <BrowserRouter>
-    <Routes>
-      <Route path='/login' element={<Login />}/>
-      </Routes> 
-      </BrowserRouter>
-      <Toaster></Toaster>
-  </div>
+import React from 'react'
+import Layout from './components/layout/Layout.jsx'
+import './styles/style.min.css'
+const App = () => {
+  return (
+      <Layout/>
+  )
 }
 
-export default App;
+export default App
